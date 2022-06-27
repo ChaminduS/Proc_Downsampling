@@ -47,7 +47,7 @@ always@(posedge clk)
             end
 
             else begin
-                isn_addr <= ins_addr;
+                ins_addr <= ins_addr;
             end
         end 
     end
