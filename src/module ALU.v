@@ -25,7 +25,7 @@ parameter INCAC = 4'b0101 ;
 parameter DECAC = 4'b0110 ;
 parameter LSHIFT1 = 4'b0111 ;
 parameter LSHIFT2 = 4'b1000 ;
-parameter LSHIFT9 = 4'b1001 ;
+parameter LSHIFT8 = 4'b1001 ;
 parameter RSHIFT4 = 4'b1010 ;
 parameter RESET = 4'b1011;
 
@@ -76,7 +76,7 @@ always@ ( posedge clk )
 
         LSHIFT2 : C_bus <= A_bus << 2;
 
-        LSHIFT9 : C_bus <= A_bus << 8;
+        LSHIFT8 : C_bus <= A_bus << 8;
 
         RSHIFT4 : C_bus <= A_bus >> 4;
 
