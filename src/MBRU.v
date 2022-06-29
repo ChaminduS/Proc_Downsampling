@@ -6,13 +6,13 @@
 
 module MBRU (
     input clk,
-    input read_enable, //connects to the MIR fetch signal
+    input fetch, //connects to the MIR fetch signal
     input [7:0] ins_in, //connects to the IRAM out
     output reg [7:0] ins_out //connects to the control store
 );
     always@(posedge clk)
         begin
-            if (read_enable) ins_out <= ins_in;
+            if (fetch) ins_out <= ins_in;
         end
 
 endmodule

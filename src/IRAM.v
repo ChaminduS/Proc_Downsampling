@@ -1,13 +1,13 @@
 // Author : Dasun Premathilaka
-// Last Updated : 28/06/2022
+// Last Updated : 29/06/2022
 
 //IRAM - Instruction RAM
 //Stores the instructions to be executed sequentially
 
 module IRAM (
     input clk,
-    input [7:0] address, //connects to the PC
-    output reg [7:0] ins_out //connects to the MBRU
+    input [7:0] addr, //connects to the PC
+    output reg [7:0] dout //connects to the MBRU
 );
     reg [7:0] ROM [120:0];
 
@@ -50,7 +50,7 @@ module IRAM (
 
     always@(posedge clk)
         begin
-            ins_out <= ROM[address];
+            dout <= ROM[addr];
         end
 
     initial begin
