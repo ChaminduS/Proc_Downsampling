@@ -172,7 +172,7 @@ decoder decoder(
     .MDR(MDR_bus),
     .MBRU(ins_out),
     .B_Bus_ctrl(MIR[3:0]),
-    .B_Bus(B_Bus)
+    .B_Bus(B_bus)
 );
 
 endmodule

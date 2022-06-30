@@ -325,3 +325,107 @@ dismissDialog("Save Project As"); // aG (cr)
 selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (bB)
 // bB (cr):  Save Constraints : addNotify
 dismissDialog("Save Constraints"); // bB (cr)
+// Elapsed time: 16 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent"); // af (cr)
+selectMenuItem(PAResourceCommand.PACommandNames_SAVE_PROJECT_AS, "Save As..."); // ai (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+// Run Command: PAResourceCommand.PACommandNames_SAVE_PROJECT_AS
+// aG (cr): Save Project As: addNotify
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "Proc_downsampling"); // ac (Q, aG)
+selectButton(PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION, (String) null); // t (an, aG)
+setFolderChooser("F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Processor Design 18/Vivado");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aG)
+// 'o' command handler elapsed time: 21 seconds
+// TclEventType: PROJECT_RENAME
+dismissDialog("Save Project As"); // aG (cr)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: PROJECT_RENAME
+// bB (cr):  Save Project As : addNotify
+// TclEventType: PROJECT_RENAME
+// Tcl Message: save_project_as Proc_downsampling {F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Processor Design 18/Vivado/Proc_downsampling} -force 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Processor Design 18/Vivado/Proc_downsampling' 
+// bB (cr):  Save Constraints : addNotify
+dismissDialog("Save Constraints"); // bB (cr)
+// PAPropertyPanels.initPanels (enable) elapsed time: 0.4s
+// Elapsed time: 30 seconds
+selectView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic", 82, 110, 735, 393, false, false, false, true, false); // f (i, cr) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SchMenuAndMouse_EXPAND_CONE, "Expand Cone"); // af (ao, cr)
+// Elapsed time: 196 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_CONSTRAINTS, "Constraints"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_CONSTRAINTS, "Constraints"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // af (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+// Elapsed time: 281 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aL (aI, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,688 MB. GUI used memory: 90 MB. Current time: 6/30/22, 10:51:57 PM IST
+// Elapsed time: 352 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 18, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs synth_1 
+// Tcl Message: [Thu Jun 30 22:55:35 2022] Launched synth_1... Run output will be captured here: F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Processor Design 18/Vivado/Proc_downsampling/Proc_downsampling.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Synthesis Completed: addNotify
+// Elapsed time: 54 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aj)
+dismissDialog("Synthesis Completed"); // aj (cr)
+// Elapsed time: 12 seconds
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3331] design control_unit has unconnected port enable. ]", 7); // ah (O, cr)
+// Elapsed time: 29 seconds
+floatFrame(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // aA (aL, cr)
+// PAResourceOtoP.PAViews_SCHEMATIC: Schematic: float view
+selectButton(PAResourceQtoS.SchematicView_REMOVE, "Schematic_remove"); // E (f, aN)
+maximizeFrame(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // aA (aL, aN)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// PAResourceOtoP.PAViews_SCHEMATIC: Schematic: close view
+closeFrame(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // aA (aL, aN)
+dockFrame(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // aA (aL, aN)
+maximizeFrame(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // aA (aL, aN)
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, cr) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, cr) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 16, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// Elapsed time: 21 seconds
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3331] design control_unit has unconnected port enable. ]", 7); // ah (O, cr)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 

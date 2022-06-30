@@ -306,3 +306,11 @@ refresh_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): pea
 save_project_as Proc_downsampling {F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/Vivado/Proc_downsampling} -force
 INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
 Current project path is 'F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/Vivado/Proc_downsampling'
+save_project_as Proc_downsampling {F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Processor Design 18/Vivado/Proc_downsampling} -force
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Processor Design 18/Vivado/Proc_downsampling'
+reset_run synth_1
+launch_runs synth_1
+[Thu Jun 30 22:55:35 2022] Launched synth_1...
+Run output will be captured here: F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Processor Design 18/Vivado/Proc_downsampling/Proc_downsampling.runs/synth_1/runme.log
+update_compile_order -fileset sources_1
