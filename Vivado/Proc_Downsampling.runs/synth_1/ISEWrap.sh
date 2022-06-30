@@ -39,15 +39,22 @@ else
 ISE_HOST=$HOST     #csh
 fi
 ISE_USER=$USER
+<<<<<<< Updated upstream
 
 ISE_HOSTCORE=$(awk '/^processor/{print $3}' /proc/cpuinfo | wc -l)
 ISE_MEMTOTAL=$(awk '/MemTotal/ {print $2}' /proc/meminfo)
 
+=======
+>>>>>>> Stashed changes
 ISE_BEGINFILE=.$ISE_STEP.begin.rst
 /bin/touch $ISE_BEGINFILE
 echo "<?xml version=\"1.0\"?>"                                                                     >> $ISE_BEGINFILE
 echo "<ProcessHandle Version=\"1\" Minor=\"0\">"                                                   >> $ISE_BEGINFILE
+<<<<<<< Updated upstream
 echo "    <Process Command=\"$ISE_STEP\" Owner=\"$ISE_USER\" Host=\"$ISE_HOST\" Pid=\"$ISE_PID\" HostCore=\"$ISE_HOSTCORE\" HostMemory=\"$ISE_MEMTOTAL\">" >> $ISE_BEGINFILE
+=======
+echo "    <Process Command=\"$ISE_STEP\" Owner=\"$ISE_USER\" Host=\"$ISE_HOST\" Pid=\"$ISE_PID\">" >> $ISE_BEGINFILE
+>>>>>>> Stashed changes
 echo "    </Process>"                                                                              >> $ISE_BEGINFILE
 echo "</ProcessHandle>"                                                                            >> $ISE_BEGINFILE
 

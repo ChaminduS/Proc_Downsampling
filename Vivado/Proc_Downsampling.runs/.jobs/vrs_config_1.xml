@@ -1,9 +1,13 @@
 <?xml version="1.0"?>
 <Runs Version="1" Minor="0">
+<<<<<<< Updated upstream
 	<Run Id="synth_1" LaunchDir="F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/Vivado/Proc_Downsampling.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
 	<Parameters>
 		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
 		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
 	</Parameters>
+=======
+	<Run Id="synth_1" LaunchDir="E:/Users/dasun/Documents/Proc_Downsampling/Vivado/Proc_Downsampling.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+>>>>>>> Stashed changes
 </Runs>
 

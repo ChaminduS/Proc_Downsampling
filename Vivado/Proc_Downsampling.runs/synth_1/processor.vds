@@ -1,4 +1,5 @@
 #-----------------------------------------------------------
+<<<<<<< Updated upstream
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
@@ -8,6 +9,17 @@
 # Command line: vivado.exe -log processor.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source processor.tcl
 # Log file: F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/Vivado/Proc_Downsampling.runs/synth_1/processor.vds
 # Journal file: F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/Vivado/Proc_Downsampling.runs/synth_1\vivado.jou
+=======
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Jun 30 22:32:54 2022
+# Process ID: 10816
+# Current directory: E:/Users/dasun/Documents/Proc_Downsampling/Vivado/Proc_Downsampling.runs/synth_1
+# Command line: vivado.exe -log processor.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source processor.tcl
+# Log file: E:/Users/dasun/Documents/Proc_Downsampling/Vivado/Proc_Downsampling.runs/synth_1/processor.vds
+# Journal file: E:/Users/dasun/Documents/Proc_Downsampling/Vivado/Proc_Downsampling.runs/synth_1\vivado.jou
+>>>>>>> Stashed changes
 #-----------------------------------------------------------
 source processor.tcl -notrace
 Command: synth_design -top processor -part xc7z020clg484-1
@@ -15,6 +27,7 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
+<<<<<<< Updated upstream
 INFO: Helper process launched with PID 20860 
 ---------------------------------------------------------------------------------
 Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 701.949 ; gain = 236.863
@@ -28,6 +41,21 @@ INFO: [Synth 8-6155] done synthesizing module 'PC' (2#1) [F:/5th semester ENTC/1
 WARNING: [Synth 8-689] width (24) of port connection 'C_bus' does not match port width (8) of module 'PC' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/processor.v:54]
 WARNING: [Synth 8-7023] instance 'PC' of module 'PC' has 7 connections declared, but only 6 given [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/processor.v:49]
 INFO: [Synth 8-6157] synthesizing module 'IRAM' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/IRAM.v:7]
+=======
+INFO: Helper process launched with PID 15156 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 356.223 ; gain = 99.188
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'processor' [E:/Users/dasun/Documents/Proc_Downsampling/src/processor.v:1]
+INFO: [Synth 8-6157] synthesizing module 'control_unit' [E:/Users/dasun/Documents/Proc_Downsampling/src/control_unit.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'control_unit' (1#1) [E:/Users/dasun/Documents/Proc_Downsampling/src/control_unit.v:8]
+INFO: [Synth 8-6157] synthesizing module 'PC' [E:/Users/dasun/Documents/Proc_Downsampling/src/PC.v:8]
+INFO: [Synth 8-226] default block is never used [E:/Users/dasun/Documents/Proc_Downsampling/src/PC.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (2#1) [E:/Users/dasun/Documents/Proc_Downsampling/src/PC.v:8]
+WARNING: [Synth 8-689] width (24) of port connection 'C_bus' does not match port width (8) of module 'PC' [E:/Users/dasun/Documents/Proc_Downsampling/src/processor.v:54]
+WARNING: [Synth 8-350] instance 'PC' of module 'PC' requires 7 connections, but only 6 given [E:/Users/dasun/Documents/Proc_Downsampling/src/processor.v:49]
+INFO: [Synth 8-6157] synthesizing module 'IRAM' [E:/Users/dasun/Documents/Proc_Downsampling/src/IRAM.v:7]
+>>>>>>> Stashed changes
 	Parameter FETCH bound to: 8'b00000000 
 	Parameter NOP bound to: 8'b00000010 
 	Parameter LDAC bound to: 8'b00000011 
@@ -60,6 +88,7 @@ INFO: [Synth 8-6157] synthesizing module 'IRAM' [F:/5th semester ENTC/1 - EN3030
 	Parameter MVL bound to: 8'b00101010 
 	Parameter L1 bound to: 8'b01111000 
 	Parameter L2 bound to: 8'b00010101 
+<<<<<<< Updated upstream
 INFO: [Synth 8-6155] done synthesizing module 'IRAM' (3#1) [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/IRAM.v:7]
 INFO: [Synth 8-6157] synthesizing module 'MBRU' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/MBRU.v:7]
 INFO: [Synth 8-6155] done synthesizing module 'MBRU' (4#1) [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/MBRU.v:7]
@@ -70,6 +99,19 @@ INFO: [Synth 8-6155] done synthesizing module 'MDR' (6#1) [F:/5th semester ENTC/
 INFO: [Synth 8-6157] synthesizing module 'MAR' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/MAR.v:7]
 INFO: [Synth 8-6155] done synthesizing module 'MAR' (7#1) [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/MAR.v:7]
 INFO: [Synth 8-6157] synthesizing module 'ALU' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/module ALU.v:9]
+=======
+INFO: [Synth 8-6155] done synthesizing module 'IRAM' (3#1) [E:/Users/dasun/Documents/Proc_Downsampling/src/IRAM.v:7]
+INFO: [Synth 8-6157] synthesizing module 'MBRU' [E:/Users/dasun/Documents/Proc_Downsampling/src/MBRU.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'MBRU' (4#1) [E:/Users/dasun/Documents/Proc_Downsampling/src/MBRU.v:7]
+INFO: [Synth 8-6157] synthesizing module 'GPR' [E:/Users/dasun/Documents/Proc_Downsampling/src/GPR.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'GPR' (5#1) [E:/Users/dasun/Documents/Proc_Downsampling/src/GPR.v:7]
+INFO: [Synth 8-6157] synthesizing module 'MDR' [E:/Users/dasun/Documents/Proc_Downsampling/src/MDR.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'MDR' (6#1) [E:/Users/dasun/Documents/Proc_Downsampling/src/MDR.v:7]
+WARNING: [Synth 8-689] width (1) of port connection 'data_in_DRAM' does not match port width (8) of module 'MDR' [E:/Users/dasun/Documents/Proc_Downsampling/src/processor.v:138]
+INFO: [Synth 8-6157] synthesizing module 'MAR' [E:/Users/dasun/Documents/Proc_Downsampling/src/MAR.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'MAR' (7#1) [E:/Users/dasun/Documents/Proc_Downsampling/src/MAR.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [E:/Users/dasun/Documents/Proc_Downsampling/src/module ALU.v:9]
+>>>>>>> Stashed changes
 	Parameter ADD bound to: 4'b0001 
 	Parameter SUB bound to: 4'b0010 
 	Parameter PASSATOC bound to: 4'b0011 
@@ -81,6 +123,7 @@ INFO: [Synth 8-6157] synthesizing module 'ALU' [F:/5th semester ENTC/1 - EN3030 
 	Parameter LSHIFT8 bound to: 4'b1001 
 	Parameter RSHIFT4 bound to: 4'b1010 
 	Parameter RESET bound to: 4'b1011 
+<<<<<<< Updated upstream
 INFO: [Synth 8-226] default block is never used [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/module ALU.v:46]
 INFO: [Synth 8-155] case statement is not full and has no default [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/module ALU.v:59]
 INFO: [Synth 8-6155] done synthesizing module 'ALU' (8#1) [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/module ALU.v:9]
@@ -90,6 +133,17 @@ WARNING: [Synth 8-689] width (1) of port connection 'B_Bus' does not match port 
 WARNING: [Synth 8-3848] Net din in module/entity processor does not have driver. [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/processor.v:138]
 WARNING: [Synth 8-3848] Net B_bus in module/entity processor does not have driver. [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/processor.v:18]
 INFO: [Synth 8-6155] done synthesizing module 'processor' (10#1) [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/processor.v:1]
+=======
+INFO: [Synth 8-226] default block is never used [E:/Users/dasun/Documents/Proc_Downsampling/src/module ALU.v:46]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Users/dasun/Documents/Proc_Downsampling/src/module ALU.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (8#1) [E:/Users/dasun/Documents/Proc_Downsampling/src/module ALU.v:9]
+INFO: [Synth 8-6157] synthesizing module 'decoder' [E:/Users/dasun/Documents/Proc_Downsampling/src/decoder.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'decoder' (9#1) [E:/Users/dasun/Documents/Proc_Downsampling/src/decoder.v:11]
+WARNING: [Synth 8-689] width (1) of port connection 'B_Bus' does not match port width (24) of module 'decoder' [E:/Users/dasun/Documents/Proc_Downsampling/src/processor.v:174]
+WARNING: [Synth 8-3848] Net din in module/entity processor does not have driver. [E:/Users/dasun/Documents/Proc_Downsampling/src/processor.v:138]
+WARNING: [Synth 8-3848] Net B_bus in module/entity processor does not have driver. [E:/Users/dasun/Documents/Proc_Downsampling/src/processor.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'processor' (10#1) [E:/Users/dasun/Documents/Proc_Downsampling/src/processor.v:1]
+>>>>>>> Stashed changes
 WARNING: [Synth 8-3331] design control_unit has unconnected port enable
 WARNING: [Synth 8-3331] design control_unit has unconnected port Z_flag
 WARNING: [Synth 8-3331] design control_unit has unconnected port addr[7]
@@ -117,22 +171,42 @@ WARNING: [Synth 8-3331] design processor has unconnected port d_in[2]
 WARNING: [Synth 8-3331] design processor has unconnected port d_in[1]
 WARNING: [Synth 8-3331] design processor has unconnected port d_in[0]
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 774.609 ; gain = 309.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 774.609 ; gain = 309.523
+=======
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 411.172 ; gain = 154.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 411.172 ; gain = 154.137
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 774.609 ; gain = 309.523
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'PC'
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/module ALU.v:59]
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ALU'
+=======
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 411.172 ; gain = 154.137
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'PC'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element dout_reg was removed.  [E:/Users/dasun/Documents/Proc_Downsampling/src/IRAM.v:53]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Users/dasun/Documents/Proc_Downsampling/src/module ALU.v:59]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ALU'
+INFO: [Synth 8-5546] ROM "Z_flag0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -152,7 +226,11 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'ALU'
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 774.609 ; gain = 309.523
+=======
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 411.172 ; gain = 154.137
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -181,7 +259,11 @@ Detailed RTL Component Info :
 	  12 Input     24 Bit        Muxes := 1     
 	   2 Input     24 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 2     
+<<<<<<< Updated upstream
 	   2 Input      1 Bit        Muxes := 4     
+=======
+	   2 Input      1 Bit        Muxes := 5     
+>>>>>>> Stashed changes
 	  12 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -242,7 +324,11 @@ Detailed RTL Component Info :
 	  12 Input     24 Bit        Muxes := 1     
 	   2 Input     24 Bit        Muxes := 1     
 	  12 Input      1 Bit        Muxes := 2     
+<<<<<<< Updated upstream
 	   2 Input      1 Bit        Muxes := 2     
+=======
+	   2 Input      1 Bit        Muxes := 3     
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -260,7 +346,22 @@ No constraint files found.
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
+<<<<<<< Updated upstream
 INFO: [Synth 8-4471] merging register 'ALU/start_reg' into 'PC/start_reg' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/module ALU.v:41]
+=======
+INFO: [Synth 8-4471] merging register 'ALU/start_reg' into 'PC/start_reg' [E:/Users/dasun/Documents/Proc_Downsampling/src/module ALU.v:41]
+WARNING: [Synth 8-6014] Unused sequential element IRAM/dout_reg was removed.  [E:/Users/dasun/Documents/Proc_Downsampling/src/IRAM.v:53]
+WARNING: [Synth 8-6014] Unused sequential element MBRU/ins_out_reg was removed.  [E:/Users/dasun/Documents/Proc_Downsampling/src/MBRU.v:15]
+WARNING: [Synth 8-6014] Unused sequential element MDR/data_out_Bbus_reg was removed.  [E:/Users/dasun/Documents/Proc_Downsampling/src/MDR.v:20]
+WARNING: [Synth 8-6014] Unused sequential element ALU/start_reg was removed.  [E:/Users/dasun/Documents/Proc_Downsampling/src/module ALU.v:41]
+WARNING: [Synth 8-6014] Unused sequential element ALU/Z_flag_reg was removed.  [E:/Users/dasun/Documents/Proc_Downsampling/src/module ALU.v:64]
+WARNING: [Synth 8-6014] Unused sequential element L/data_out_reg was removed.  [E:/Users/dasun/Documents/Proc_Downsampling/src/GPR.v:16]
+WARNING: [Synth 8-6014] Unused sequential element C1/data_out_reg was removed.  [E:/Users/dasun/Documents/Proc_Downsampling/src/GPR.v:16]
+WARNING: [Synth 8-6014] Unused sequential element C2/data_out_reg was removed.  [E:/Users/dasun/Documents/Proc_Downsampling/src/GPR.v:16]
+WARNING: [Synth 8-6014] Unused sequential element C3/data_out_reg was removed.  [E:/Users/dasun/Documents/Proc_Downsampling/src/GPR.v:16]
+WARNING: [Synth 8-6014] Unused sequential element T/data_out_reg was removed.  [E:/Users/dasun/Documents/Proc_Downsampling/src/GPR.v:16]
+WARNING: [Synth 8-6014] Unused sequential element E/data_out_reg was removed.  [E:/Users/dasun/Documents/Proc_Downsampling/src/GPR.v:16]
+>>>>>>> Stashed changes
 WARNING: [Synth 8-3331] design processor has unconnected port d_in[7]
 WARNING: [Synth 8-3331] design processor has unconnected port d_in[6]
 WARNING: [Synth 8-3331] design processor has unconnected port d_in[5]
@@ -373,6 +474,7 @@ INFO: [Synth 8-3886] merging instance 'AC/data_out_reg[13]' (FDE) to 'AC/data_ou
 INFO: [Synth 8-3886] merging instance 'AC/data_out_reg[14]' (FDE) to 'AC/data_out_reg[23]'
 INFO: [Synth 8-3886] merging instance 'AC/data_out_reg[15]' (FDE) to 'AC/data_out_reg[23]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\AC/data_out_reg[23] )
+<<<<<<< Updated upstream
 WARNING: [Synth 8-3332] Sequential element (PC/FSM_onehot_state_reg[3]) is unused and will be removed from module processor.
 WARNING: [Synth 8-3332] Sequential element (PC/FSM_onehot_state_reg[2]) is unused and will be removed from module processor.
 WARNING: [Synth 8-3332] Sequential element (PC/FSM_onehot_state_reg[1]) is unused and will be removed from module processor.
@@ -383,6 +485,50 @@ WARNING: [Synth 8-3332] Sequential element (ALU/FSM_onehot_state_reg[1]) is unus
 WARNING: [Synth 8-3332] Sequential element (ALU/FSM_onehot_state_reg[0]) is unused and will be removed from module processor.
 ---------------------------------------------------------------------------------
 Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 950.758 ; gain = 485.672
+=======
+WARNING: [Synth 8-3332] Sequential element (ALU/C_bus_reg[23]) is unused and will be removed from module processor.
+WARNING: [Synth 8-3332] Sequential element (ALU/C_bus_reg[22]) is unused and will be removed from module processor.
+WARNING: [Synth 8-3332] Sequential element (ALU/C_bus_reg[21]) is unused and will be removed from module processor.
+WARNING: [Synth 8-3332] Sequential element (ALU/C_bus_reg[20]) is unused and will be removed from module processor.
+WARNING: [Synth 8-3332] Sequential element (ALU/C_bus_reg[19]) is unused and will be removed from module processor.
+WARNING: [Synth 8-3332] Sequential element (ALU/C_bus_reg[18]) is unused and will be removed from module processor.
+WARNING: [Synth 8-3332] Sequential element (ALU/C_bus_reg[17]) is unused and will be removed from module processor.
+WARNING: [Synth 8-3332] Sequential element (ALU/C_bus_reg[16]) is unused and will be removed from module processor.
+WARNING: [Synth 8-3332] Sequential element (ALU/C_bus_reg[15]) is unused and will be removed from module processor.
+WARNING: [Synth 8-3332] Sequential element (ALU/C_bus_reg[14]) is unused and will be removed from module processor.
+WARNING: [Synth 8-3332] Sequential element (ALU/C_bus_reg[13]) is unused and will be removed from module processor.
+WARNING: [Synth 8-3332] Sequential element (ALU/C_bus_reg[12]) is unused and will be removed from module processor.
+WARNING: [Synth 8-3332] Sequential element (ALU/C_bus_reg[11]) is unused and will be removed from module processor.
+WARNING: [Synth 8-3332] Sequential element (ALU/C_bus_reg[10]) is unused and will be removed from module processor.
+WARNING: [Synth 8-3332] Sequential element (ALU/C_bus_reg[9]) is unused and will be removed from module processor.
+WARNING: [Synth 8-3332] Sequential element (ALU/C_bus_reg[8]) is unused and will be removed from module processor.
+WARNING: [Synth 8-3332] Sequential element (ALU/C_bus_reg[7]) is unused and will be removed from module processor.
+WARNING: [Synth 8-3332] Sequential element (ALU/C_bus_reg[6]) is unused and will be removed from module processor.
+WARNING: [Synth 8-3332] Sequential element (ALU/C_bus_reg[5]) is unused and will be removed from module processor.
+WARNING: [Synth 8-3332] Sequential element (ALU/C_bus_reg[4]) is unused and will be removed from module processor.
+WARNING: [Synth 8-3332] Sequential element (ALU/C_bus_reg[3]) is unused and will be removed from module processor.
+WARNING: [Synth 8-3332] Sequential element (ALU/C_bus_reg[2]) is unused and will be removed from module processor.
+WARNING: [Synth 8-3332] Sequential element (ALU/C_bus_reg[1]) is unused and will be removed from module processor.
+WARNING: [Synth 8-3332] Sequential element (ALU/C_bus_reg[0]) is unused and will be removed from module processor.
+WARNING: [Synth 8-3332] Sequential element (ctrl/check_reg) is unused and will be removed from module processor.
+WARNING: [Synth 8-3332] Sequential element (AC/data_out_reg[23]) is unused and will be removed from module processor.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 559.008 ; gain = 301.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|IRAM        | dout_reg   | 128x8         | Block RAM      | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -395,7 +541,11 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 950.758 ; gain = 485.672
+=======
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 559.008 ; gain = 301.973
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -407,7 +557,11 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 950.758 ; gain = 485.672
+=======
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 559.008 ; gain = 301.973
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -431,20 +585,12 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 950.758 ; gain = 485.672
 ---------------------------------------------------------------------------------
+=======
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 559.008 ; gain = 301.973
 ---------------------------------------------------------------------------------
-Start Renaming Generated Instances
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 950.758 ; gain = 485.672
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
 
 Report Check Netlist: 
 +------+------------------+-------+---------+-------+------------------+
@@ -452,29 +598,72 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
+>>>>>>> Stashed changes
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 950.758 ; gain = 485.672
+=======
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 559.008 ; gain = 301.973
+>>>>>>> Stashed changes
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+<<<<<<< Updated upstream
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+=======
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 950.758 ; gain = 485.672
+=======
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 559.008 ; gain = 301.973
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 950.758 ; gain = 485.672
+=======
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 559.008 ; gain = 301.973
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 950.758 ; gain = 485.672
+=======
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 559.008 ; gain = 301.973
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 950.758 ; gain = 485.672
+=======
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 559.008 ; gain = 301.973
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -487,16 +676,29 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
+<<<<<<< Updated upstream
 +------+-----+------+
 |      |Cell |Count |
 +------+-----+------+
 |1     |OBUF |    27|
 +------+-----+------+
+=======
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     2|
+|2     |FDE_1 |     8|
+|3     |FDRE  |     1|
+|4     |IBUF  |     2|
+|5     |OBUF  |    27|
++------+------+------+
+>>>>>>> Stashed changes
 
 Report Instance Areas: 
 +------+---------+-------+------+
 |      |Instance |Module |Cells |
 +------+---------+-------+------+
+<<<<<<< Updated upstream
 |1     |top      |       |    27|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
@@ -523,3 +725,33 @@ Resolution: This message can indicate that there are no constraints for the desi
 INFO: [Common 17-1381] The checkpoint 'F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/Vivado/Proc_Downsampling.runs/synth_1/processor.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file processor_utilization_synth.rpt -pb processor_utilization_synth.pb
 INFO: [Common 17-206] Exiting Vivado at Thu Jun 30 22:14:22 2022...
+=======
+|1     |top      |       |    40|
+|2     |  ALU    |ALU    |     4|
+|3     |  PC     |PC     |     5|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 559.008 ; gain = 301.973
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 78 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 559.008 ; gain = 301.973
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 559.008 ; gain = 301.973
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  FDE_1 => FDRE (inverted pins: C): 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+145 Infos, 78 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 670.895 ; gain = 426.754
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'E:/Users/dasun/Documents/Proc_Downsampling/Vivado/Proc_Downsampling.runs/synth_1/processor.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file processor_utilization_synth.rpt -pb processor_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 670.895 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 30 22:33:22 2022...
+>>>>>>> Stashed changes

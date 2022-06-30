@@ -116,6 +116,7 @@ function ISEExec( ISEProg, ISEArgs ) {
     var ISEProcess = ISEShell.Exec( ISECmdLine );
     
     // BEGIN file creation
+<<<<<<< Updated upstream
     var wbemFlagReturnImmediately = 0x10;
     var wbemFlagForwardOnly = 0x20;
     var objWMIService = GetObject ("winmgmts:{impersonationLevel=impersonate, (Systemtime)}!//./root/cimv2");
@@ -140,6 +141,8 @@ function ISEExec( ISEProg, ISEArgs ) {
     var ISEHOSTCORE = NOLP
     var ISEMEMTOTAL = TPM
 
+=======
+>>>>>>> Stashed changes
     var ISENetwork = WScript.CreateObject( "WScript.Network" );
     var ISEHost = ISENetwork.ComputerName;
     var ISEUser = ISENetwork.UserName;
@@ -151,8 +154,11 @@ function ISEExec( ISEProg, ISEArgs ) {
 			    "\" Owner=\"" + ISEUser + 
 			    "\" Host=\"" + ISEHost + 
 			    "\" Pid=\"" + ISEPid +
+<<<<<<< Updated upstream
 			    "\" HostCore=\"" + ISEHOSTCORE +
 			    "\" HostMemory=\"" + ISEMEMTOTAL +
+=======
+>>>>>>> Stashed changes
 			    "\">" );
     ISEBeginFile.WriteLine( "    </Process>" );
     ISEBeginFile.WriteLine( "</ProcessHandle>" );
