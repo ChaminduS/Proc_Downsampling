@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< Updated upstream
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1656607408">
-=======
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1656608569">
->>>>>>> Stashed changes
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1656609285">
   <File Type="PA-TCL" Name="processor.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="processor_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="processor_reports.tcl"/>
@@ -145,17 +141,10 @@
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
-<<<<<<< Updated upstream
-  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
-    <Filter Type="Utils"/>
-    <Config>
-      <Option Name="TopAutoSet" Val="TRUE"/>
-    </Config>
-  </FileSet>
-=======
->>>>>>> Stashed changes
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>
