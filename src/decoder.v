@@ -1,3 +1,13 @@
+/***************************************************************
+EN3030 - Circuits and System Design
+180497C - 180554B - 180564F - 180574K
+Designing a custom processor for Image Downsampling
+
+Author : Avishka Sandeepa
+Last Updated : 28/06/2022
+Module : B Bus Multiplexer
+****************************************************************/
+
 module decoder (
     // initializing registers
     input [23:0] L, C1 , C2 , C3 , T , E ,

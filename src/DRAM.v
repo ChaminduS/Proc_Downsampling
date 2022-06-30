@@ -1,4 +1,15 @@
+/***************************************************************
+EN3030 - Circuits and System Design
+180497C - 180554B - 180564F - 180574K
+Designing a custom processor for Image Downsampling
+
+Author : Avishka Sandeepa
+Last Updated : 29/06/2022
+Module : Data Random Access Memory
+****************************************************************/
+
 module DRAM (
+    input addr,
     input clk,
     input write,
     input read,
