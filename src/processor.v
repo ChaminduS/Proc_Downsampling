@@ -51,7 +51,7 @@ PC PC(
     .enable(enable),
     .load(MIR[15]),
     .inc(MIR[4]),
-    .C_bus(C_bus),
+    .C_bus(C_bus[7:0]),
     .ins_address(ins_address),
     .finish(finish)
 );
