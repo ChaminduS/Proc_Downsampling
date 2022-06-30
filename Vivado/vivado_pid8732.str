@@ -429,3 +429,135 @@ collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synt
 // TclEventType: DG_GRAPH_STALE
 // TclEventType: FILE_SET_CHANGE
 // Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 441 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aL (aI, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor (processor.v)]", 2); // B (F, cr)
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (ds, cr)
+// bB (cr):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1759.426 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,716 MB. GUI used memory: 89 MB. Current time: 6/30/22, 11:05:47 PM IST
+// TclEventType: ELABORATE_FAIL
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'IRAM' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/IRAM.v:7] 
+// Tcl Message: ERROR: [Synth 8-439] module 'ALU' not found [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/processor.v:153] ERROR: [Synth 8-6156] failed synthesizing module 'processor' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/processor.v:1] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1759.426 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1759.426 ; gain = 0.000 
+// Tcl Message: ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.  
+// S (cr): Critical Messages: addNotify
+dismissDialog("Reloading"); // bB (cr)
+// Elapsed time: 13 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,757 MB. GUI used memory: 89 MB. Current time: 6/30/22, 11:11:02 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,804 MB. GUI used memory: 89 MB. Current time: 6/30/22, 11:11:17 PM IST
+// [Engine Memory]: 1,804 MB (+44745kb) [00:59:44]
+// Elapsed time: 341 seconds
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3331] design control_unit has unconnected port enable. ]", 12); // ah (O, cr)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3331] design control_unit has unconnected port enable. ]", 12); // ah (O, cr)
+// Elapsed time: 40 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor (processor.v), ALU : xil_defaultlib.ALU]", 16, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor (processor.v), ALU : xil_defaultlib.ALU]", 16, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cr)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+// Elapsed time: 13 seconds
+setFileChooser("F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/ALU.v");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 17 seconds
+dismissDialog("Add Sources"); // c (cr)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {{F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/ALU.v}} 
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (ds, cr)
+// bB (cr):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1850.441 ; gain = 16.480 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// Engine heap size: 1,823 MB. GUI used memory: 65 MB. Current time: 6/30/22, 11:13:02 PM IST
+// WARNING: HEventQueue.dispatchEvent() is taking  1345 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 65 MB. Current time: 6/30/22, 11:13:02 PM IST
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'IRAM' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/IRAM.v:7] 
+// Tcl Message: 	Parameter ADD bound to: 4'b0001  	Parameter SUB bound to: 4'b0010  	Parameter PASSATOC bound to: 4'b0011  	Parameter PASSBTOC bound to: 4'b0100  	Parameter INCAC bound to: 4'b0101  	Parameter DECAC bound to: 4'b0110  	Parameter LSHIFT1 bound to: 4'b0111  	Parameter LSHIFT2 bound to: 4'b1000  	Parameter LSHIFT8 bound to: 4'b1001  	Parameter RSHIFT4 bound to: 4'b1010  	Parameter RESET bound to: 4'b1011  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'processor' (10#1) [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/processor.v:1] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1850.441 ; gain = 16.480 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1850.441 ; gain = 16.480 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1850.441 ; gain = 16.480 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 65 MB. Current time: 6/30/22, 11:13:03 PM IST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  3341 ms.
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1850.441 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1850.441 ; gain = 16.480 
+// Elapsed time: 16 seconds
+dismissDialog("Reloading"); // bB (cr)
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 38 seconds
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (ds, cr)
+// bB (cr):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1850.441 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// Engine heap size: 1,826 MB. GUI used memory: 66 MB. Current time: 6/30/22, 11:13:56 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,826 MB. GUI used memory: 66 MB. Current time: 6/30/22, 11:13:56 PM IST
+// WARNING: HEventQueue.dispatchEvent() is taking  1330 ms.
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'IRAM' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/IRAM.v:7] 
+// Tcl Message: 	Parameter ADD bound to: 4'b0001  	Parameter SUB bound to: 4'b0010  	Parameter PASSATOC bound to: 4'b0011  	Parameter PASSBTOC bound to: 4'b0100  	Parameter INCAC bound to: 4'b0101  	Parameter DECAC bound to: 4'b0110  	Parameter LSHIFT1 bound to: 4'b0111  	Parameter LSHIFT2 bound to: 4'b1000  	Parameter LSHIFT8 bound to: 4'b1001  	Parameter RSHIFT4 bound to: 4'b1010  	Parameter RESET bound to: 4'b1011  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'processor' (10#1) [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/processor.v:1] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1850.441 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1851.309 ; gain = 0.867 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1851.309 ; gain = 0.867 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,826 MB. GUI used memory: 66 MB. Current time: 6/30/22, 11:13:58 PM IST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2987 ms.
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1851.309 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1851.309 ; gain = 0.867 
+// Elapsed time: 15 seconds
+dismissDialog("Reloading"); // bB (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE

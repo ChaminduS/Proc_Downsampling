@@ -136,7 +136,7 @@ MDR MDR(
     .read(MIR[6]),
     .write(MIR[5]),
     .C_bus(C_bus[7:0]),
-    .data_in_DRAM(din),
+    .data_in_DRAM(d_in),
     .data_out_Bbus(MDR_bus),
     .data_out_DRAM(dout)
 );

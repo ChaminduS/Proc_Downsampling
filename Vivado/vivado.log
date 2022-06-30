@@ -314,3 +314,322 @@ launch_runs synth_1
 [Thu Jun 30 22:55:35 2022] Launched synth_1...
 Run output will be captured here: F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Processor Design 18/Vivado/Proc_downsampling/Proc_downsampling.runs/synth_1/runme.log
 update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1759.426 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'processor' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/processor.v:1]
+INFO: [Synth 8-6157] synthesizing module 'control_unit' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/control_unit.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'control_unit' (1#1) [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/control_unit.v:8]
+INFO: [Synth 8-6157] synthesizing module 'PC' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/PC.v:8]
+INFO: [Synth 8-226] default block is never used [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/PC.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (2#1) [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/PC.v:8]
+WARNING: [Synth 8-689] width (24) of port connection 'C_bus' does not match port width (8) of module 'PC' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/processor.v:54]
+INFO: [Synth 8-6157] synthesizing module 'IRAM' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/IRAM.v:7]
+	Parameter FETCH bound to: 8'b00000000 
+	Parameter NOP bound to: 8'b00000010 
+	Parameter LDAC bound to: 8'b00000011 
+	Parameter STAC bound to: 8'b00000101 
+	Parameter CLAC bound to: 8'b00000111 
+	Parameter MVACMAR bound to: 8'b00001000 
+	Parameter MVACC1 bound to: 8'b00001001 
+	Parameter MVACC2 bound to: 8'b00001010 
+	Parameter MVACC3 bound to: 8'b00001011 
+	Parameter MVACL bound to: 8'b00001100 
+	Parameter MVACE bound to: 8'b00001101 
+	Parameter MVACT bound to: 8'b00001110 
+	Parameter MVC1 bound to: 8'b00001111 
+	Parameter MVC2 bound to: 8'b00010000 
+	Parameter MVC3 bound to: 8'b00010001 
+	Parameter MVT bound to: 8'b00010010 
+	Parameter INAC bound to: 8'b00010011 
+	Parameter DEAC bound to: 8'b00010100 
+	Parameter ADDT bound to: 8'b00010101 
+	Parameter ADDL bound to: 8'b00010110 
+	Parameter SUBE bound to: 8'b00010111 
+	Parameter SUBL bound to: 8'b00011000 
+	Parameter DIV bound to: 8'b00011001 
+	Parameter MUL2 bound to: 8'b00011010 
+	Parameter MUL4 bound to: 8'b00011011 
+	Parameter MUL256 bound to: 8'b00011100 
+	Parameter JUMP bound to: 8'b00011101 
+	Parameter JMPZ bound to: 8'b00100000 
+	Parameter JMNZ bound to: 8'b00100101 
+	Parameter MVL bound to: 8'b00101010 
+	Parameter L1 bound to: 8'b01111000 
+	Parameter L2 bound to: 8'b00010101 
+INFO: [Synth 8-6155] done synthesizing module 'IRAM' (3#1) [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/IRAM.v:7]
+INFO: [Synth 8-6157] synthesizing module 'MBRU' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/MBRU.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'MBRU' (4#1) [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/MBRU.v:7]
+INFO: [Synth 8-6157] synthesizing module 'GPR' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/GPR.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'GPR' (5#1) [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/GPR.v:7]
+INFO: [Synth 8-6157] synthesizing module 'MDR' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/MDR.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'MDR' (6#1) [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/MDR.v:7]
+INFO: [Synth 8-6157] synthesizing module 'MAR' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/MAR.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'MAR' (7#1) [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/MAR.v:7]
+ERROR: [Synth 8-439] module 'ALU' not found [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/processor.v:153]
+ERROR: [Synth 8-6156] failed synthesizing module 'processor' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/processor.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1759.426 ; gain = 0.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+refresh_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1759.426 ; gain = 0.000
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+add_files -norecurse {{F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/ALU.v}}
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1850.441 ; gain = 16.480
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'processor' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/processor.v:1]
+INFO: [Synth 8-6157] synthesizing module 'control_unit' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/control_unit.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'control_unit' (1#1) [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/control_unit.v:8]
+INFO: [Synth 8-6157] synthesizing module 'PC' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/PC.v:8]
+INFO: [Synth 8-226] default block is never used [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/PC.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (2#1) [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/PC.v:8]
+WARNING: [Synth 8-689] width (24) of port connection 'C_bus' does not match port width (8) of module 'PC' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/processor.v:54]
+INFO: [Synth 8-6157] synthesizing module 'IRAM' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/IRAM.v:7]
+	Parameter FETCH bound to: 8'b00000000 
+	Parameter NOP bound to: 8'b00000010 
+	Parameter LDAC bound to: 8'b00000011 
+	Parameter STAC bound to: 8'b00000101 
+	Parameter CLAC bound to: 8'b00000111 
+	Parameter MVACMAR bound to: 8'b00001000 
+	Parameter MVACC1 bound to: 8'b00001001 
+	Parameter MVACC2 bound to: 8'b00001010 
+	Parameter MVACC3 bound to: 8'b00001011 
+	Parameter MVACL bound to: 8'b00001100 
+	Parameter MVACE bound to: 8'b00001101 
+	Parameter MVACT bound to: 8'b00001110 
+	Parameter MVC1 bound to: 8'b00001111 
+	Parameter MVC2 bound to: 8'b00010000 
+	Parameter MVC3 bound to: 8'b00010001 
+	Parameter MVT bound to: 8'b00010010 
+	Parameter INAC bound to: 8'b00010011 
+	Parameter DEAC bound to: 8'b00010100 
+	Parameter ADDT bound to: 8'b00010101 
+	Parameter ADDL bound to: 8'b00010110 
+	Parameter SUBE bound to: 8'b00010111 
+	Parameter SUBL bound to: 8'b00011000 
+	Parameter DIV bound to: 8'b00011001 
+	Parameter MUL2 bound to: 8'b00011010 
+	Parameter MUL4 bound to: 8'b00011011 
+	Parameter MUL256 bound to: 8'b00011100 
+	Parameter JUMP bound to: 8'b00011101 
+	Parameter JMPZ bound to: 8'b00100000 
+	Parameter JMNZ bound to: 8'b00100101 
+	Parameter MVL bound to: 8'b00101010 
+	Parameter L1 bound to: 8'b01111000 
+	Parameter L2 bound to: 8'b00010101 
+INFO: [Synth 8-6155] done synthesizing module 'IRAM' (3#1) [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/IRAM.v:7]
+INFO: [Synth 8-6157] synthesizing module 'MBRU' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/MBRU.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'MBRU' (4#1) [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/MBRU.v:7]
+INFO: [Synth 8-6157] synthesizing module 'GPR' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/GPR.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'GPR' (5#1) [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/GPR.v:7]
+INFO: [Synth 8-6157] synthesizing module 'MDR' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/MDR.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'MDR' (6#1) [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/MDR.v:7]
+INFO: [Synth 8-6157] synthesizing module 'MAR' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/MAR.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'MAR' (7#1) [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/MAR.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/ALU.v:9]
+	Parameter ADD bound to: 4'b0001 
+	Parameter SUB bound to: 4'b0010 
+	Parameter PASSATOC bound to: 4'b0011 
+	Parameter PASSBTOC bound to: 4'b0100 
+	Parameter INCAC bound to: 4'b0101 
+	Parameter DECAC bound to: 4'b0110 
+	Parameter LSHIFT1 bound to: 4'b0111 
+	Parameter LSHIFT2 bound to: 4'b1000 
+	Parameter LSHIFT8 bound to: 4'b1001 
+	Parameter RSHIFT4 bound to: 4'b1010 
+	Parameter RESET bound to: 4'b1011 
+INFO: [Synth 8-226] default block is never used [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/ALU.v:46]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/ALU.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (8#1) [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/ALU.v:9]
+INFO: [Synth 8-6157] synthesizing module 'decoder' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/decoder.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'decoder' (9#1) [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/decoder.v:11]
+WARNING: [Synth 8-689] width (1) of port connection 'B_Bus' does not match port width (24) of module 'decoder' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/processor.v:175]
+WARNING: [Synth 8-3848] Net din in module/entity processor does not have driver. [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/processor.v:139]
+WARNING: [Synth 8-3848] Net B_bus in module/entity processor does not have driver. [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/processor.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'processor' (10#1) [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/processor.v:1]
+WARNING: [Synth 8-3331] design control_unit has unconnected port enable
+WARNING: [Synth 8-3331] design control_unit has unconnected port Z_flag
+WARNING: [Synth 8-3331] design control_unit has unconnected port addr[7]
+WARNING: [Synth 8-3331] design control_unit has unconnected port addr[6]
+WARNING: [Synth 8-3331] design control_unit has unconnected port addr[5]
+WARNING: [Synth 8-3331] design control_unit has unconnected port addr[4]
+WARNING: [Synth 8-3331] design control_unit has unconnected port addr[3]
+WARNING: [Synth 8-3331] design control_unit has unconnected port addr[2]
+WARNING: [Synth 8-3331] design control_unit has unconnected port addr[1]
+WARNING: [Synth 8-3331] design control_unit has unconnected port addr[0]
+WARNING: [Synth 8-3331] design control_unit has unconnected port MBRU[7]
+WARNING: [Synth 8-3331] design control_unit has unconnected port MBRU[6]
+WARNING: [Synth 8-3331] design control_unit has unconnected port MBRU[5]
+WARNING: [Synth 8-3331] design control_unit has unconnected port MBRU[4]
+WARNING: [Synth 8-3331] design control_unit has unconnected port MBRU[3]
+WARNING: [Synth 8-3331] design control_unit has unconnected port MBRU[2]
+WARNING: [Synth 8-3331] design control_unit has unconnected port MBRU[1]
+WARNING: [Synth 8-3331] design control_unit has unconnected port MBRU[0]
+WARNING: [Synth 8-3331] design processor has unconnected port d_in[7]
+WARNING: [Synth 8-3331] design processor has unconnected port d_in[6]
+WARNING: [Synth 8-3331] design processor has unconnected port d_in[5]
+WARNING: [Synth 8-3331] design processor has unconnected port d_in[4]
+WARNING: [Synth 8-3331] design processor has unconnected port d_in[3]
+WARNING: [Synth 8-3331] design processor has unconnected port d_in[2]
+WARNING: [Synth 8-3331] design processor has unconnected port d_in[1]
+WARNING: [Synth 8-3331] design processor has unconnected port d_in[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1850.441 ; gain = 16.480
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1850.441 ; gain = 16.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1850.441 ; gain = 16.480
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1850.441 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1850.441 ; gain = 16.480
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1850.441 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'processor' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/processor.v:1]
+INFO: [Synth 8-6157] synthesizing module 'control_unit' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/control_unit.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'control_unit' (1#1) [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/control_unit.v:8]
+INFO: [Synth 8-6157] synthesizing module 'PC' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/PC.v:8]
+INFO: [Synth 8-226] default block is never used [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/PC.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (2#1) [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/PC.v:8]
+WARNING: [Synth 8-689] width (24) of port connection 'C_bus' does not match port width (8) of module 'PC' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/processor.v:54]
+INFO: [Synth 8-6157] synthesizing module 'IRAM' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/IRAM.v:7]
+	Parameter FETCH bound to: 8'b00000000 
+	Parameter NOP bound to: 8'b00000010 
+	Parameter LDAC bound to: 8'b00000011 
+	Parameter STAC bound to: 8'b00000101 
+	Parameter CLAC bound to: 8'b00000111 
+	Parameter MVACMAR bound to: 8'b00001000 
+	Parameter MVACC1 bound to: 8'b00001001 
+	Parameter MVACC2 bound to: 8'b00001010 
+	Parameter MVACC3 bound to: 8'b00001011 
+	Parameter MVACL bound to: 8'b00001100 
+	Parameter MVACE bound to: 8'b00001101 
+	Parameter MVACT bound to: 8'b00001110 
+	Parameter MVC1 bound to: 8'b00001111 
+	Parameter MVC2 bound to: 8'b00010000 
+	Parameter MVC3 bound to: 8'b00010001 
+	Parameter MVT bound to: 8'b00010010 
+	Parameter INAC bound to: 8'b00010011 
+	Parameter DEAC bound to: 8'b00010100 
+	Parameter ADDT bound to: 8'b00010101 
+	Parameter ADDL bound to: 8'b00010110 
+	Parameter SUBE bound to: 8'b00010111 
+	Parameter SUBL bound to: 8'b00011000 
+	Parameter DIV bound to: 8'b00011001 
+	Parameter MUL2 bound to: 8'b00011010 
+	Parameter MUL4 bound to: 8'b00011011 
+	Parameter MUL256 bound to: 8'b00011100 
+	Parameter JUMP bound to: 8'b00011101 
+	Parameter JMPZ bound to: 8'b00100000 
+	Parameter JMNZ bound to: 8'b00100101 
+	Parameter MVL bound to: 8'b00101010 
+	Parameter L1 bound to: 8'b01111000 
+	Parameter L2 bound to: 8'b00010101 
+INFO: [Synth 8-6155] done synthesizing module 'IRAM' (3#1) [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/IRAM.v:7]
+INFO: [Synth 8-6157] synthesizing module 'MBRU' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/MBRU.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'MBRU' (4#1) [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/MBRU.v:7]
+INFO: [Synth 8-6157] synthesizing module 'GPR' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/GPR.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'GPR' (5#1) [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/GPR.v:7]
+INFO: [Synth 8-6157] synthesizing module 'MDR' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/MDR.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'MDR' (6#1) [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/MDR.v:7]
+INFO: [Synth 8-6157] synthesizing module 'MAR' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/MAR.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'MAR' (7#1) [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/MAR.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/ALU.v:9]
+	Parameter ADD bound to: 4'b0001 
+	Parameter SUB bound to: 4'b0010 
+	Parameter PASSATOC bound to: 4'b0011 
+	Parameter PASSBTOC bound to: 4'b0100 
+	Parameter INCAC bound to: 4'b0101 
+	Parameter DECAC bound to: 4'b0110 
+	Parameter LSHIFT1 bound to: 4'b0111 
+	Parameter LSHIFT2 bound to: 4'b1000 
+	Parameter LSHIFT8 bound to: 4'b1001 
+	Parameter RSHIFT4 bound to: 4'b1010 
+	Parameter RESET bound to: 4'b1011 
+INFO: [Synth 8-226] default block is never used [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/ALU.v:46]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/ALU.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (8#1) [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/ALU.v:9]
+INFO: [Synth 8-6157] synthesizing module 'decoder' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/decoder.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'decoder' (9#1) [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/decoder.v:11]
+WARNING: [Synth 8-689] width (1) of port connection 'B_Bus' does not match port width (24) of module 'decoder' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/processor.v:175]
+WARNING: [Synth 8-3848] Net din in module/entity processor does not have driver. [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/processor.v:139]
+WARNING: [Synth 8-3848] Net B_bus in module/entity processor does not have driver. [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/processor.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'processor' (10#1) [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/processor.v:1]
+WARNING: [Synth 8-3331] design control_unit has unconnected port enable
+WARNING: [Synth 8-3331] design control_unit has unconnected port Z_flag
+WARNING: [Synth 8-3331] design control_unit has unconnected port addr[7]
+WARNING: [Synth 8-3331] design control_unit has unconnected port addr[6]
+WARNING: [Synth 8-3331] design control_unit has unconnected port addr[5]
+WARNING: [Synth 8-3331] design control_unit has unconnected port addr[4]
+WARNING: [Synth 8-3331] design control_unit has unconnected port addr[3]
+WARNING: [Synth 8-3331] design control_unit has unconnected port addr[2]
+WARNING: [Synth 8-3331] design control_unit has unconnected port addr[1]
+WARNING: [Synth 8-3331] design control_unit has unconnected port addr[0]
+WARNING: [Synth 8-3331] design control_unit has unconnected port MBRU[7]
+WARNING: [Synth 8-3331] design control_unit has unconnected port MBRU[6]
+WARNING: [Synth 8-3331] design control_unit has unconnected port MBRU[5]
+WARNING: [Synth 8-3331] design control_unit has unconnected port MBRU[4]
+WARNING: [Synth 8-3331] design control_unit has unconnected port MBRU[3]
+WARNING: [Synth 8-3331] design control_unit has unconnected port MBRU[2]
+WARNING: [Synth 8-3331] design control_unit has unconnected port MBRU[1]
+WARNING: [Synth 8-3331] design control_unit has unconnected port MBRU[0]
+WARNING: [Synth 8-3331] design processor has unconnected port d_in[7]
+WARNING: [Synth 8-3331] design processor has unconnected port d_in[6]
+WARNING: [Synth 8-3331] design processor has unconnected port d_in[5]
+WARNING: [Synth 8-3331] design processor has unconnected port d_in[4]
+WARNING: [Synth 8-3331] design processor has unconnected port d_in[3]
+WARNING: [Synth 8-3331] design processor has unconnected port d_in[2]
+WARNING: [Synth 8-3331] design processor has unconnected port d_in[1]
+WARNING: [Synth 8-3331] design processor has unconnected port d_in[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1850.441 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1851.309 ; gain = 0.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1851.309 ; gain = 0.867
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1851.309 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1851.309 ; gain = 0.867
