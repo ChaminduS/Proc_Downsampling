@@ -1,13 +1,14 @@
-
-*** Running vivado
-    with args -log processor.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source processor.tcl
-
-
-****** Vivado v2019.2 (64-bit)
-  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
-  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Jun 30 22:13:33 2022
+# Process ID: 3416
+# Current directory: F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/Vivado/Proc_Downsampling.runs/synth_1
+# Command line: vivado.exe -log processor.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source processor.tcl
+# Log file: F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/Vivado/Proc_Downsampling.runs/synth_1/processor.vds
+# Journal file: F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/Vivado/Proc_Downsampling.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
 source processor.tcl -notrace
 Command: synth_design -top processor -part xc7z020clg484-1
 Starting synth_design

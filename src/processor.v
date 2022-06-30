@@ -53,6 +53,7 @@ PC PC(
     .inc(MIR[4]),
     .C_bus(C_bus),
     .ins_address(ins_address)
+    .finish(finish)
 );
 
 //instruction memory
