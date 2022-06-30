@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 CRC performance measure: elapsed=00:00:00.001s;;memory_peak=1670.457MB;;memory_gain=0.000MB
+=======
+CRC performance measure: elapsed=00:00:00.001s;;memory_peak=1197.016MB;;memory_gain=0.000MB
+>>>>>>> d0af3b92596203b622f43588aed897a97ee0ce3e

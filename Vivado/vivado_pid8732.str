@@ -229,3 +229,43 @@ dismissDialog("Critical Messages"); // S (cr)
 // TclEventType: DESIGN_STALE
 // TclEventType: DG_GRAPH_STALE
 // TclEventType: FILE_SET_CHANGE
+// Elapsed time: 25 seconds
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (ds, cr)
+// bB (cr):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1671.590 ; gain = 1.133 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,654 MB. GUI used memory: 85 MB. Current time: 6/30/22, 10:21:51 PM IST
+// [Engine Memory]: 1,677 MB (+19491kb) [00:10:12]
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,684 MB. GUI used memory: 61 MB. Current time: 6/30/22, 10:21:54 PM IST
+// Engine heap size: 1,684 MB. GUI used memory: 62 MB. Current time: 6/30/22, 10:21:54 PM IST
+// WARNING: HEventQueue.dispatchEvent() is taking  1431 ms.
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'IRAM' [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/IRAM.v:7] 
+// Tcl Message: 	Parameter ADD bound to: 4'b0001  	Parameter SUB bound to: 4'b0010  	Parameter PASSATOC bound to: 4'b0011  	Parameter PASSBTOC bound to: 4'b0100  	Parameter INCAC bound to: 4'b0101  	Parameter DECAC bound to: 4'b0110  	Parameter LSHIFT1 bound to: 4'b0111  	Parameter LSHIFT2 bound to: 4'b1000  	Parameter LSHIFT8 bound to: 4'b1001  	Parameter RSHIFT4 bound to: 4'b1010  	Parameter RESET bound to: 4'b1011  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'processor' (10#1) [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/processor.v:1] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1701.379 ; gain = 30.922 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1725.207 ; gain = 54.750 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1725.207 ; gain = 54.750 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,684 MB. GUI used memory: 61 MB. Current time: 6/30/22, 10:21:56 PM IST
+// Xgd.load filename: F:/Vitis/Vivado/2019.2/data/parts/xilinx/zynq/devint/zynq/xc7z020/xc7z020.xgd; ZipEntry: xc7z020_detail.xgd elapsed time: 0.5s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  3466 ms.
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1725.207 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1759.426 ; gain = 88.969 
+// Elapsed time: 16 seconds
+dismissDialog("Reloading"); // bB (cr)
