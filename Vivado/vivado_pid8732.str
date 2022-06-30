@@ -269,3 +269,59 @@ selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (ds, cr)
 // Tcl Message: refresh_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1759.426 ; gain = 88.969 
 // Elapsed time: 16 seconds
 dismissDialog("Reloading"); // bB (cr)
+// Elapsed time: 1021 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent"); // af (cr)
+selectMenuItem(PAResourceCommand.PACommandNames_SAVE_PROJECT_AS, "Save As..."); // ai (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+// Run Command: PAResourceCommand.PACommandNames_SAVE_PROJECT_AS
+// aG (cr): Save Project As: addNotify
+// Elapsed time: 11 seconds
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "Proc_downsampling"); // ac (Q, aG)
+selectButton(PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION, (String) null); // t (an, aG)
+// HOptionPane Error: 'Please use ASCII characters for directory name or path. (Non-ASCII Characters Found)'
+// HOptionPane Error: 'Please use ASCII characters for directory name or path. (Non-ASCII Characters Found)'
+// Elapsed time: 15 seconds
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// Elapsed time: 12 seconds
+dismissFolderChooser();
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aG)
+// 'o' command handler elapsed time: 41 seconds
+dismissDialog("Save Project As"); // aG (cr)
+// Elapsed time: 10 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_CONSTRAINTS, "Constraints"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_CONSTRAINTS, "Constraints"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_CONSTRAINTS, "Constraints"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent"); // af (cr)
+selectMenuItem(PAResourceCommand.PACommandNames_SAVE_PROJECT_AS, "Save As..."); // ai (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+// Run Command: PAResourceCommand.PACommandNames_SAVE_PROJECT_AS
+// aG (cr): Save Project As: addNotify
+// Elapsed time: 12 seconds
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "Proc_downsampling", true); // ac (Q, aG)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aG)
+// 'o' command handler elapsed time: 12 seconds
+// TclEventType: PROJECT_RENAME
+dismissDialog("Save Project As"); // aG (cr)
+// Tcl Message: save_project_as Proc_downsampling {F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/Vivado/Proc_downsampling} -force 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/Vivado/Proc_downsampling' 
+// bB (cr):  Save Project As : addNotify
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: PROJECT_RENAME
+// WARNING: HEventQueue.dispatchEvent() is taking  1310 ms.
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (bB)
+// bB (cr):  Save Constraints : addNotify
+dismissDialog("Save Constraints"); // bB (cr)
