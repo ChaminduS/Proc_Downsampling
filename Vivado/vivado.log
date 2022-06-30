@@ -169,3 +169,9 @@ reset_run synth_1
 launch_runs synth_1
 [Thu Jun 30 22:13:28 2022] Launched synth_1...
 Run output will be captured here: F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/Vivado/Proc_Downsampling.runs/synth_1/runme.log
+refresh_design
+ERROR: [Synth 8-2715] syntax error near . [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/processor.v:56]
+INFO: [Synth 8-2350] module processor ignored due to previous errors [F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/processor.v:1]
+Failed to read verilog 'F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/src/processor.v'
+refresh_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1670.457 ; gain = 37.570
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
