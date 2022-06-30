@@ -26,6 +26,9 @@ end
 //State block (to ensure CPI=4)
 reg [1:0] state = 2'b0;
 
+always@(posedge enable)
+    start <= 1'b1;
+
 always@(negedge clk)
     begin
         if (start) begin
