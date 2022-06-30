@@ -52,7 +52,7 @@ PC PC(
     .load(MIR[15]),
     .inc(MIR[4]),
     .C_bus(C_bus),
-    .ins_address(ins_address)
+    .ins_address(ins_address),
     .finish(finish)
 );
 

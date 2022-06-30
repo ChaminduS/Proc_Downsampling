@@ -9,3 +9,10 @@
 # Log file: F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/Vivado/vivado.log
 # Journal file: F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/Vivado\vivado.jou
 #-----------------------------------------------------------
+start_gui
+open_project {F:/5th semester ENTC/1 - EN3030 - Circuits and Systems Design/Proc_downsampling/Vivado/Proc_Downsampling.xpr}
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
