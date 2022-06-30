@@ -18,7 +18,11 @@ module DRAM (
 );
 
 reg [7:0] RAM [65535:0];
-
+/*****************************    
+initial begin
+    $readmemb("path to the image value file",RAM);
+end
+******************************/
 always @(posedge clk) 
 begin
     if (write) begin
