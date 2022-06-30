@@ -8,7 +8,7 @@ Module : Program Counter
 module PC(
     input clk,
     input enable,
-    input reset,
+    input finish,
     input load,
     input inc,
     input [7:0] C_bus,
@@ -25,6 +25,9 @@ end
 
 //State block (to ensure CPI=4)
 reg [1:0] state = 2'b0;
+
+always@(posedge enable)
+    start <= 1'b1;
 
 always@(negedge clk)
     begin
