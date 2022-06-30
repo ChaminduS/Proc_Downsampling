@@ -42,7 +42,7 @@ always@(negedge clk)
 //Program counter functions
 always@(posedge clk)
     begin
-        if (reset) ins_address <= ins_address;
+        if (finish) ins_address <= ins_address;
 
         else if (start) begin
             if (state == 2'b11 && load) begin
