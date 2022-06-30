@@ -8,7 +8,7 @@ Module : Program Counter
 module PC(
     input clk,
     input enable,
-    input reset,
+    input finish,
     input load,
     input inc,
     input [7:0] C_bus,
