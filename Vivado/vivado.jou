@@ -29,3 +29,16 @@ add_files -norecurse {{F:/5th semester ENTC/1 - EN3030 - Circuits and Systems De
 refresh_design
 update_compile_order -fileset sources_1
 refresh_design
+refresh_design
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+refresh_design

@@ -35,5 +35,10 @@ begin
     end
     
 end
+/*****************************    
+initial begin
+    $writememh("saving location","array that contain the final pixel values");
+end
+******************************/
     
 endmodule
