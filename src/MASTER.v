@@ -23,7 +23,7 @@ state_control state_control(
 );
 
 //Clock Generator
-clk_gen clk_gen(
+clock_gen clock_gen(
     .clk(clk)
 );
 

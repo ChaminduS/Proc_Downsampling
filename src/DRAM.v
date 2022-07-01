@@ -63,7 +63,7 @@ always @(posedge clk) begin
 
         DRAM_wr :
             begin
-                $writememh("saving location","array that contain the final pixel values");
+                $writememh("saving location",RAM);
                 wr_done=1;
                 state <= IDLE;
             end
