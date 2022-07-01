@@ -9,7 +9,7 @@ Module : Data Random Access Memory
 ****************************************************************/
 
 module DRAM (
-    input addr,
+    input [15:0] addr,
     input clk,
     input write,
     input read,
