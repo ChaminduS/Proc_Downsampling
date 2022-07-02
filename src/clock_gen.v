@@ -8,7 +8,7 @@ parameter clk_pd = 160; //Clock period in ns
 initial begin
     clk = 0;
     forever 
-         #(clk_pd) clk = ~clk;
+         #(clk_pd/2) clk = ~clk;
 end
 
     
