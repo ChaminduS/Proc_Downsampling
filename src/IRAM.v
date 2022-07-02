@@ -107,7 +107,7 @@ module IRAM (
         ROM[40] = MVACMAR; //MAR <- AC
         ROM[41] = LDAC; //AC <- DRAM[MAR] (top right pixel)
         ROM[42] = ADDT; //AC <- AC + T
-        ROM[43] = MVT; //T <- AC
+        ROM[43] = MVACT; //T <- AC
 
         //total <- total + 2 * mid left pixel
         ROM[44] = MVC1; //AC <- C1
