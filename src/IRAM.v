@@ -160,29 +160,25 @@ module IRAM (
         ROM[81] = MVACMAR; //MAR <- AC
         ROM[82] = LDAC; //AC <- DRAM[MAR] (bottom right pixel)
         ROM[83] = ADDT; //AC <- AC + T
-        ROM[84] = DIV; //AC <- AC / 16
-        ROM[85] = MVACT; //T <- AC
-
-        //storing the calculated average value
-        ROM[86] = MVC3; //AC <- C3
-        ROM[87] = MVACMAR; //MAR <- AC
-        ROM[88] = MVT; //AC <- T
+        ROM[84] = MVACT; //T <- AC
+        ROM[85] = MVT; //AC <- T
+        ROM[86] = DIV; //AC <- AC / 16
+        ROM[87] = MVC3; //AC <- C3
+        ROM[88] = MVACMAR; //MAR <- AC
         ROM[89] = STAC; //DRAM[MAR] <- AC
 
         //updating C1, C2, C3 values
-        ROM[90] = MVC1; //AC <- C1
-        ROM[91] = INAC; //AC <- AC + 1
-        ROM[92] = INAC; //AC <- AC + 1
-        ROM[93] = MVACC1; // C1 <- AC  (C1 <- C1 + 2)
-
-        ROM[94] = MVC2; //AC <- C2
-        ROM[95] = INAC; //AC <- AC + 1
-        ROM[96] = INAC; //AC <- AC + 1
-        ROM[97] = MVACC2; //C2 <- AC (C2 <- C2 + 2)
-
-        ROM[98] = MVC3; //AC <- C3
-        ROM[99] = INAC; //AC <- AC + 1
-        ROM[100] = MVACC3; //C3 <- AC (C3 <- C3 + 1)
+        ROM[90] = MVC3; //AC <— C3 
+        ROM[91] = INAC; //AC <— AC + 1 
+        ROM[92] = MVACC3; //C3 <— AC 
+        ROM[93] = MVC2; //AC <— C2 
+        ROM[94] = INAC; //AC <— AC + 1 
+        ROM[95] = INAC; //AC <— AC + 1 
+        ROM[96] = MVACC2; //C2 <— AC 
+        ROM[97] = MVC1; //AC <— C1 
+        ROM[98] = INAC; //AC <— AC + 1 
+        ROM[99] = INAC; //AC <— AC + 1 
+        ROM[100] = MVACC1; //C1 <— AC 
 
         //checking the conditions before starting the next cycle
         ROM[101] = MVC1; //AC <- C1
