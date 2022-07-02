@@ -18,6 +18,11 @@ parameter complete = 3'b100;
 
 reg [2:0] state = IDLE;
 
+initial begin
+    enable = 0;
+    rd_en = 0;
+    wr_en = 0;
+end
 
 always @(posedge clk) begin
     case (state)
