@@ -22,35 +22,31 @@ module DRAM (
 );
 
 reg [7:0] RAM [65535:0];
-  
 
-parameter IDLE = 2'b00;
+reg [1:0] state = 2'b00;
+
+assign state = {wr_en,rd_en};  
+
+// parameter IDLE = 2'b00;
 parameter DRAM_rd = 2'b01;
-parameter proc_run = 2'b10;
-parameter DRAM_wr = 2'b11;
+parameter proc_run = 2'b00;
+parameter DRAM_wr = 2'b10;
 
-reg [2:0] state = IDLE;
+// reg [2:0] state = IDLE;
 
 
 always @(posedge clk) begin
     case (state)
-        IDLE :
-            begin
-                if (rd_en) begin
-                    state <= DRAM_rd;
-                end
-            end
-        
+
         DRAM_rd :
             begin
                 $readmemb("path to the image value file",RAM);
                 rd_done <= 1'b1;
-                state <= proc_run;
             end
 
         proc_run :
             begin
-                if (~wr_en)
+                if (wr_en == 1'b0)
                     if (write) begin
                         RAM[addr] <= din;
                     end
@@ -58,15 +54,15 @@ always @(posedge clk) begin
                     if (read) begin
                         dout <= RAM[addr];
                     end
-                else state <=DRAM_wr;
+                else if (wr_en == 1'b1) state <=DRAM_wr;
             end
 
         DRAM_wr :
             begin
-                $writememh("saving location",RAM);
+                $writememb("saving location",RAM);
                 wr_done=1;
-                state <= IDLE;
             end
+        
 
     endcase
 end
