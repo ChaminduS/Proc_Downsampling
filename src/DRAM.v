@@ -25,7 +25,9 @@ reg [7:0] RAM [65535:0];
 
 reg [1:0] state = 2'b00;
 
+initial begin
 assign state = {wr_en,rd_en};  
+end
 
 // parameter IDLE = 2'b00;
 parameter DRAM_rd = 2'b01;
