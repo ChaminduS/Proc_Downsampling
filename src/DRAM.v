@@ -4,7 +4,7 @@ EN3030 - Circuits and System Design
 Designing a custom processor for Image Downsampling
 
 Author : Avishka Sandeepa
-Last Updated : 29/06/2022
+Last Updated : 03/07/2022
 Module : Data Random Access Memory
 ****************************************************************/
 
