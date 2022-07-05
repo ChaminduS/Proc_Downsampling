@@ -14,16 +14,16 @@ wire [7:0] ins_address;
 wire [7:0] ins_in;
 wire [7:0] ins_out;
 wire [29:0] MIR;
-wire [23:0] A_bus;
-wire [23:0] B_bus;
-wire [23:0] C_bus;
+wire [15:0] A_bus;
+wire [15:0] B_bus;
+wire [15:0] C_bus;
 wire Z_flag;
-wire [23:0] L_bus;
-wire [23:0] C1_bus;
-wire [23:0] C2_bus;
-wire [23:0] C3_bus;
-wire [23:0] T_bus; 
-wire [23:0] E_bus;
+wire [15:0] L_bus;
+wire [15:0] C1_bus;
+wire [15:0] C2_bus;
+wire [15:0] C3_bus;
+wire [15:0] T_bus; 
+wire [15:0] E_bus;
 wire [7:0] MDR_bus;
 wire finish_flag;
 
@@ -145,7 +145,7 @@ MDR MDR(
 MAR MAR(
     .clk(clk),
     .load(MIR[17]),
-    .C_bus(C_bus[15:0]),
+    .C_bus(C_bus),
     .data_address(addr_out)
 );
 

@@ -42,7 +42,7 @@ always @(posedge clk) begin
 
         DRAM_rd :
             begin
-                $readmemb("path to the image value file",RAM);
+                $readmemb("E:/Users/dasun/Documents/Proc_Downsampling/Python Scripts/image_cameraman.txt",RAM);
                 rd_done <= 1'b1;
             end
 
@@ -61,7 +61,7 @@ always @(posedge clk) begin
 
         DRAM_wr :
             begin
-                $writememb("saving location",RAM);
+                $writememb("E:/Users/dasun/Documents/Proc_Downsampling/Python Scripts/downsampled_image_cameraman.txt",RAM);
                 wr_done=1;
             end
         

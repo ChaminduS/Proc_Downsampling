@@ -7,8 +7,8 @@
 module GPR(
     input clk,
     input load,
-    input [23:0] C_bus, //connects to the MIR load signal
-    output reg [23:0] data_out //connects to the b bus via a mux
+    input [15:0] C_bus, //connects to the MIR load signal
+    output reg [15:0] data_out //connects to the b bus via a mux
 
 ); 
 always@(posedge clk)

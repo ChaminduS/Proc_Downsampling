@@ -7,12 +7,12 @@ Module : ALU
 ****************************************************************/
 
 module ALU(
-    input [23:0] A_bus,
-    input [23:0] B_bus,
+    input [15:0] A_bus,
+    input [15:0] B_bus,
     input [3:0] operation,
     input enable,
     input clk,
-    output reg[23:0] C_bus,
+    output reg[15:0] C_bus,
     output reg Z_flag
 
 );
@@ -30,7 +30,7 @@ parameter RSHIFT4 = 4'b1010 ;
 parameter RESET = 4'b1011;
 
 initial begin
-    C_bus = 24'b0;
+    C_bus = 16'b0;
     Z_flag = 1'b0;
 end
 
@@ -61,7 +61,7 @@ always@ ( posedge clk )
 
         SUB : begin
         C_bus = A_bus - B_bus ;
-        Z_flag = ( C_bus == 24'b0) ? 1'b1 : 1'b0;
+        Z_flag = ( C_bus == 16'b0) ? 1'b1 : 1'b0;
         end
 
         PASSATOC : C_bus <= A_bus ;
@@ -80,7 +80,7 @@ always@ ( posedge clk )
 
         RSHIFT4 : C_bus <= A_bus >> 4;
 
-        RESET : C_bus <= 24'b0;
+        RESET : C_bus <= 16'b0;
 
         // default : C_bus = C_bus ;
     endcase
